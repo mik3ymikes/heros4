@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { Hero } from '../hero';
 import { HEROES } from '../mock.heros';
 import { UpperCasePipe } from '@angular/common';
-import { NgModel } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -14,10 +13,15 @@ import { FormsModule } from '@angular/forms';
 })
 export class HeroesComponent {
   heroes=HEROES
-  
-  hero:Hero={
+
+  selectedHero?:Hero={
     id:1,
     name: "Mace Window"
+  }
+
+
+  onSelect(hero:Hero):void{
+    this.selectedHero=hero
   }
 
 }
