@@ -7,6 +7,7 @@ import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { HeroService } from '../hero.service';
 
 
+
 @Component({
   selector: 'app-heroes',
   standalone: true,
