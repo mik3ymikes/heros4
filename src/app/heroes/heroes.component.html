@@ -3,7 +3,7 @@
 
 
 <h2>My Heroes</h2>
-  @for (hero of heroes; track hero.id; let idx = $index, e = $even) {
+  @for (hero of heroes; track hero.id; let idx = $index) {
     <ul class="heroes">
       <li>
         <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
