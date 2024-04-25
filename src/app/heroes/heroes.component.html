@@ -16,7 +16,7 @@
   @for (hero of heroes; track hero.id; let idx = $index, e = $even) {
     <ul class="heroes">
       <li>
-        <button type="button" (click)="onSelect(hero)">
+        <button [class.selected]="hero === selectedHero" type="button" (click)="onSelect(hero)">
           <span class="badge">{{hero.id}}</span>
           <span class="name">{{hero.name}}</span>
         </button>
