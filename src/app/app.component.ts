@@ -14,4 +14,3 @@ import { MessagesComponent } from './messages/messages.component';
 export class AppComponent {
   title = 'Tour of Heros';
 }
-//note
